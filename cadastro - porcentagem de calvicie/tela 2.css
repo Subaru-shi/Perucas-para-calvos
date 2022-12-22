@@ -1,0 +1,117 @@
+body {
+    font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+    color: #ddd9d9;
+    background:#008b8b; 
+    text-align: center;
+}
+
+.calvos {
+    margin: 60px auto;
+    width: 400px;
+    text-align: center;
+}
+
+.calvos .progress {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.progress {
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+    height: 16px;
+    border-radius: 8px;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+#five:checked~.progress>.progress-bar {
+    width: 5%;
+    background-color: #d9300a;
+}
+
+#twentyfive:checked~.progress>.progress-bar {
+    width: 25%;
+    background-color: #ee7c2a;
+}
+
+#fifty:checked~.progress>.progress-bar {
+    width: 50%;
+    background-color: #f5b62c;
+}
+
+#seventyfive:checked~.progress>.progress-bar {
+    width: 75%;
+    background-color: #d7ba10;
+}
+
+#onehundred:checked~.progress>.progress-bar {
+    width: 100%;
+    background-color: #89ed16;
+}
+
+.radio {
+    display: none;
+}
+
+.label {
+    display: inline-block;
+    margin: 0 5px 20px;
+    padding: 3px 8px;
+    color: #aaa;
+    text-shadow: 0 1px black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.radio:checked+.label {
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.botin{
+    position: relative;
+    top:100px ;
+    right: 150px;
+    text-decoration: none;
+    left: 165px;
+    width: 50px;
+}
+.botin{
+  background-color: red;
+  animation-name: example;
+  animation-duration: 3s;
+  border-radius: 3px;
+  border-style:none ;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+.botin > a{
+    text-decoration: none;
+    color: black;
+}
